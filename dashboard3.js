@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   if (!currentUser) {
     alert("Please sign in first.");
-    window.location.href = "signin.html";
+    window.location.href = "signIn.html";
     return;
   }
 
