@@ -1,0 +1,90 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriTrade Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="indexStyle.css" />
+  </head>
+  <body>
+    <!-- <header>
+      <div class="brand-logo-container">
+        <img src="agriTradeLogo1.png" alt="AgriTrade logo" class="brand-logo" />
+      </div>
+      <button aria-expanded="false" class="mobile-nav-toggle"></button>
+      <nav>
+        <! <a href="index.html">🏠 Home</a> -->
+        <!-- <li><a href="index.html">🏠 Home</a></li> -->
+        <!-- <a href="marketPlace.html">🛒 Buy Products</a> -->
+        <!-- <li><a href="marketPlace.html" 🛒>Market</a></li> -->
+        <!-- <a href="add-products.html">Add Products</a> -->
+      <!-- </nav>
+    </header> --> 
+    <header class="primary-header">
+      <div class="brand-logo-container">
+        <img src="agriTradeLogo1.png" alt="AgriTrade logo" class="brand-logo" />
+      </div>
+      <button aria-expanded="false" class="mobile-nav-toggle"></button>
+      <nav>
+        <ul class="navigation-links primary-navigation" data-visible = "false">
+          <li><a href="index.html">🏠 Home</a></li>
+          <!-- <li><a href="dashboard.html">Dashboard</a></li> -->
+          <li><a href="marketPlace.html">🛒 Market</a></li>
+          <!-- <li><a href="add-products.html">Add Products</a></li> -->
+          <!-- <li><a href="signIn.html" class="sign-In">signIn</a></li>
+          <li><a href="signUp.html" class="sign-Up">signUp</a></li> -->
+        </ul>
+        <div class="animation start-home"</div>
+         
+           
+          
+      </nav>
+      
+    </header>
+    <main class="content">
+      <h2>Welcome to our dashboard</h2>
+
+      <section id="add-product">
+        <h2>Add Product</h2>
+        <form id="productForm">
+          <input
+            type="text"
+            id="productName"
+            placeholder="Product Name"
+            required
+          />
+          <input type="text" id="productPrice" placeholder="Price" required />
+          <input type="file" id="productImage" accept="image/*" />
+          <textarea
+            id="productDescription"
+            placeholder="Product Description"
+            required
+          ></textarea>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            class="email"
+            placeholder="enter your email"
+          />
+          <input
+            type="tel"
+            class="contact"
+            placeholder="Your whatsApp or call number "
+          />
+          <input type="text" placeholder="Location" id="loca" />
+          <button type="submit">Add Product</button>
+        </form>
+      </section>
+
+      <section id="posted-products">
+        <h2>My Posted Products</h2>
+        <div id="productList"></div>
+      </section>
+    </main>
+    <script src="mobileNav.js"></script>
+    <script src="dashboard3.js"></script>
+  </body>
+</html>
